@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+   font:1.5rem "Poppins";
+   min-height: 100vh;
+   background-color: #475569;
+   background-image: radial-gradient(white,#475569);
+
+   display: flex;
+   flex-direction: column;
+
+}
+
+header,nav,main,footer{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+header,footer{
+    position:sticky;
+    background-color: #1e293B;
+    color:white;
+}
+
+
+header{
+    top:0;
+}
+nav{
+    background-color: #fff;
+    color:black;
+    padding:0.5rem;
+    border-bottom: 2px solid black;
+}
+
+main{
+    flex-grow:1;
+}
+
+bottom{
+    bottom:0;
+}
+
+
+
+/* SMALL
+
+*/
+@media screen and (min-width:576px){
+    body{
+        background-color: green;
+        background-image: radial-gradient(white,green);
+    }
+
+
+  
+}
+
+
+/* MEDIUM*/
+@media screen and (min-width:576px){
+    body{
+        background-color: gold;
+        background-image: radial-gradient(white,gold);
+    }
+
+
+}
+
+
+/* LARGE*/
+@media screen and (min-width:992px){
+    body{
+        background-color: firebrick;
+        background-image: radial-gradient(white,firebrick);
+    }
+
+
+}
+
+
+/* XL*/
+@media screen and (min-width:1200px){
+    body{
+        background-color: rebeccapurple;
+        background-image: radial-gradient(white,rebeccapurple);
+    }
+
+
+}
+
+
+/* Mobile Device Landscape*/
+@media screen and (max-height:425px) and (min-aspect-ratio:7/4){
+    body{
+        background-color: dodgerblue;
+        background-image: radial-gradient(white,dodgerblue);
+    }
+
+    h1,h2{
+        font-size: 1.5rem;
+
+    }
+    nav{
+        display: none;
+    }
+
+
+}

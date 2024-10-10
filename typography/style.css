@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    padding:10%;
+    font-size:2rem;
+    font-family: "Poppins",sans-serif;
+}
+
+/* input,button{
+    font-size: inherit;
+} */
+
+
+p{
+    /* text-decoration:underline; */
+    /* text-transform: uppercase; */
+    /* text-align: justify; */
+    /* text-indent:2em; */
+
+    line-height: 1.4;
+    /* letter-spacing: 0.1em; */
+    /* word-spacing: 0.4em;
+
+    font-weight:normal;
+    font-style: italic;
+    font-family:sans-serif; */
+
+    
+}

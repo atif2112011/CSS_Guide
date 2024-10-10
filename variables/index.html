@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Header</h1>
+      <nav><h2>Nav</h2></nav>
+    </header>
+
+    <main>
+      <div class="square">Hey</div>
+      <div class="square">Hey</div>
+      <div class="square">Hey</div>
+      <div class="square">Hey</div>
+      <div class="square">Hey</div>
+      <div class="square">Hey</div>
+      <div class="square square--highlight">Hey</div>
+      <div class="square">Hey</div>
+      <div class="square">Hey</div>
+      <div class="square">Hey</div>
+      <div class="square">Hey</div>
+      <div class="square">Hey</div>
+    </main>
+
+    <footer><h2>Footer</h2></footer>
+    <script>
+      const selobj = document.getElementsByClassName("square");
+      console.log(selobj);
+      for (let i = 0; i < selobj.length; i++) {
+        selobj[i].addEventListener("click", () => {
+          console.log('clicked')
+          for (let j = 0; j < selobj.length; j++)
+            selobj[j].classList.remove("square--highlight");
+
+          selobj[i].classList.add("square--highlight");
+        });
+      }
+    </script>
+  </body>
+</html>
